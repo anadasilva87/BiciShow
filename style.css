@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    }
+body {
+    margin: 0;;
+}
+
+header{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.slider{
+    flex: 1;
+    overflow: hidden;
+}
+.slider--width{
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+.slider--item{
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+#bike1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6d5200;
+    text-shadow: 1px 2px 3px #ffd000;
+    font-size: 60px;
+    font-family:'Dancing Script', cursive;
+}
+#bike2{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: black;
+    text-shadow: 2px 3px 4px white;
+    text-align: center;
+    font-size: 40px;
+    font-family:'Red Hat Mono', monospace;
+}
+#bike3{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+#bike4{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+#bike5{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.slider-controls{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider--control{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 5px;;
+}
+
+.slider--control:hover{
+    border: solid 2px white;
+  transform: scale(1.1);
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
